@@ -1,0 +1,55 @@
+.grid {
+    display: grid;
+    column-gap: 20px;
+    *{
+      grid-column: var(--column-start) / var(--column-end);
+    }
+  }
+// Mobile
+@media screen and (max-width: 700px) {
+    .grid {
+        grid-template-columns: repeat(7, 1fr);
+    }
+    #{'.grid'+'\\'+':'+'s'+'\\'+':'} {
+        @for $start from 0 to 20 {
+            @for $end from 0 to 21 {
+                &#{$start}-#{$end} {
+                    --column-start: #{$start};
+                    --column-end: #{$end};
+                }
+            }
+        }
+        }
+    }
+  // Table
+  @media screen and (min-width: 700px) {
+    .grid {
+      grid-template-columns: repeat(9, 1fr);
+    }
+    #{'.grid'+'\\'+':'+'m'+'\\'+':'} {
+        @for $start from 0 to 20 {
+            @for $end from 0 to 21 {
+                &#{$start}-#{$end} {
+                    --column-start: #{$start};
+                    --column-end: #{$end};
+                }
+            }
+        }
+        }
+  }
+  // Desktop
+  @media screen and (min-width: 1000px) {
+      .grid {
+        grid-template-columns: repeat(19, 1fr);
+      }
+      #{'.grid'+'\\'+':'} {
+        @for $start from 0 to 20 {
+            @for $end from 0 to 21 {
+                &#{$start}-#{$end} {
+                    --column-start: #{$start};
+                    --column-end: #{$end};
+                }
+            }
+        }
+    }
+    }

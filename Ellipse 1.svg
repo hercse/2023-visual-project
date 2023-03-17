@@ -1,3 +1,13 @@
 <svg width="646" height="646" viewBox="0 0 646 646" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="323" cy="323" r="323" fill="white"/>
+<style>
+* {
+    fill: white;
+}
+@media (prefers-color-scheme: light) {
+  * {
+    fill: #151515 !important;
+  }
+}
+</style>
+<circle cx="323" cy="323" r="323"/>
 </svg>

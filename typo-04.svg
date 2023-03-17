@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 646.37 665.32">
+<style>
+* {
+    fill: white;
+}
+@media (prefers-color-scheme: light) {
+  * {
+    fill: #151515 !important;
+  }
+}
+</style>
   <defs>
     <style>
       .cls-1 {

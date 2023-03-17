@@ -3,6 +3,12 @@
   --first: #fff;
   --secondary: #151515;
 }
+@media (prefers-color-scheme: light) {
+  :root {
+    --first: #151515;
+    --secondary: #fff;
+  }
+}
 * {
   font-size: 14px;
   font-weight: 400;

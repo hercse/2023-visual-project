@@ -76,7 +76,7 @@
       object-fit: cover;
       object-position: center;
     }
-    .amination {
+    &__amination {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -84,7 +84,6 @@
       align-items: center;
       left: 0;
       width: 10000%;
-      // transform: translateX(-67.5vmin);
       @keyframes icon {
         0% {
           transform: translateX(0);
@@ -103,7 +102,7 @@
       }
       animation: icon 25s infinite linear;
       -webkit-transition: -webkit-transform 500ms;
-      div {
+      &__frame {
         margin: 0 20vmin;
         width: 70vmin;
         height: 70vmin;
@@ -143,12 +142,13 @@
         text-align: right;
       }
     }
+
     &__info {
       margin: auto;
       text-align: center;
-      width: 15%;
+      width: 25vmin;
       div:nth-child(2) {
-        margin-top: 10px;
+        margin-top: 15px;
       }
     }
     &__title {

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+    <link rel="stylesheet" href="style.min.css" />
+  </head>
+  <body>
+    <div class="fixed">
+      <div class="fixed__top grid">
+        <div class="left">Hercse</div>
+        <div class="center grid:5-16 grid:m:4-7 grid:s:3-6">
+          <a href="index.html">Index</a>
+          <a href="demo_blank.html">info</a>
+          <a href="demo_works.html">works</a>
+          <a href="demo_press.html">press</a>
+        </div>
+        <div class="right grid:17-20 grid:m:7-10 grid:s:6-9">menu</div>
+      </div>
+      <div class="fixed__bottom">
+        <marquee behavior="" scrollamount="8" direction="left"
+          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
+          quam vitae magni quidem at consequatur maiores ipsa, provident libero
+          recusandae corporis nisi similique repellat beatae nostrum
+          repellendus, doloribus rerum suscipit et porro consequuntur. Unde,
+          nisi! Eaque culpa, animi ad ipsum vel amet, illo quibusdam, debitis
+          explicabo hic incidunt alias? Possimus minus perferendis amet
+          voluptates sit est, in a ullam quas, sapiente, explicabo iusto beatae
+          eum deleniti officiis dicta! Quas tempora rem doloribus! Quaerat eos
+          optio blanditiis culpa consequuntur. Saepe exercitationem, eum
+          recusandae consequuntur laboriosam consectetur reprehenderit officia
+          doloribus sapiente non dolorum ab sed vel aspernatur, nobis accusamus
+          beatae quis et, in delectus consequatur hic error deserunt. Aspernatur
+          iure libero reprehenderit mollitia nulla ea veniam veritatis,
+          molestiae ipsum obcaecati voluptas sequi quo necessitatibus ex aut
+          aliquam, numquam suscipit fuga esse at recusandae. Mollitia, iusto.
+          Repellendus magnam quibusdam sapiente voluptate tempora. Quam sunt
+          repellendus assumenda nihil impedit quis, natus mollitia quod vel
+          vitae exercitationem, quia magni velit est. Consectetur aperiam
+          provident odit, id pariatur iusto voluptas reprehenderit quasi
+          cupiditate, error distinctio. Animi nisi eum rerum deleniti. Porro
+          mollitia at voluptatibus libero sed? Quibusdam consectetur sit nam cum
+          iure modi repellendus pariatur obcaecati laboriosam, labore ullam illo
+          unde? Maxime nam commodi saepe repellat?</marquee
+        >
+      </div>
+    </div>
+    <div class="scroll"></div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.0/bundled/lenis.js"></script>
+  <script>
+    const lenis = new Lenis();
+
+    // lenis.on("scroll", (e) => {
+    //   console.log(e);
+    // });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  </script>
+</html>

@@ -31,3 +31,11 @@ h1 {
 h2 {
   font-size: 48px;
 }
+ul,
+ol {
+  list-style-position: inside;
+  margin: 20px 0;
+  li {
+    margin: 10px 0;
+  }
+}

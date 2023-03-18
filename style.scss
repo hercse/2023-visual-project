@@ -256,7 +256,6 @@
   }
   // Post
   .post {
-    overflow: scroll;
     margin: 0;
     position: relative;
     &__hero {
@@ -276,31 +275,41 @@
         position: relative;
       }
     }
+    // table
     &__table {
-      margin: 0;
-      position: fixed;
-      z-index: 1;
-      top: 10vmin;
-      right: 0;
-      width: 22%;
+      position: relative;
+      margin: 100px 0;
       a {
         display: block;
         line-height: 120%;
         text-decoration: none;
       }
     }
-    @include media__mobile {
+    @include media__table {
       &__table {
-        position: relative;
+        margin: 0;
+        z-index: 1;
+        top: 10vmin;
+        right: 0;
+        width: 22%;
+        position: fixed;
       }
     }
+    // title
     &__title {
-      width: 70%;
-      // margin-top: 0;
+      width: 90%;
+    }
+    @include media__table {
+      &__title {
+        width: 70%;
+      }
+      &__content {
+        width: 70% !important;
+      }
     }
     &__content {
       position: relative;
-      width: 70%;
+      width: 90%;
       & > * {
         line-height: 120%;
         margin: 100px 0;
@@ -310,6 +319,13 @@
       }
       h2 {
         // width: 50%;
+      }
+      h3 {
+        font-size: 24px;
+      }
+      hr {
+        border: 0;
+        margin: 500px 0;
       }
       img {
         width: 100%;

@@ -9,6 +9,15 @@
   </head>
   <body>
     <div class="fixed">
+      <div class="fixed__hidden">
+        <section>
+          <div class="">Site List</div>
+          <br />
+          <a href="">[1] Wiki</a>
+          <a href="">[2] Developers</a>
+          <a href="">[3] List</a>
+        </section>
+      </div>
       <div class="fixed__top grid">
         <div class="left">Hercse</div>
         <div class="center grid:5-16 grid:m:4-7 grid:s:3-6">
@@ -17,7 +26,15 @@
           <a href="">works</a>
           <a href="">press</a>
         </div>
-        <div class="right grid:17-20 grid:m:7-10 grid:s:6-9">menu</div>
+        <div class="right grid:17-20 grid:m:7-10 grid:s:6-9">
+          <input
+            type="checkbox"
+            name="menu"
+            id="menu"
+            class="fixed__menu_click"
+          />
+          <label for="menu"></label>
+        </div>
       </div>
       <div class="fixed__bottom">
         <marquee behavior="" scrollamount="8" direction="left"

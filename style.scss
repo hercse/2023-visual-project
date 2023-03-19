@@ -298,6 +298,9 @@
     // title
     &__title {
       width: 90%;
+      h1 {
+        margin-top: 10px;
+      }
     }
     @include media__table {
       &__title {
